@@ -66,7 +66,7 @@ body {
 
 .video-details {
     grid-area: video-details;
-    border: 1px solid gray;
+    border-bottom: 3px solid gray;
 }
 
 .comments {
