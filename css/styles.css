@@ -48,6 +48,10 @@ body {
     vertical-align: middle;
 }
 
+.amigos {
+    margin-top: 13rem;
+}
+
 .amigos img {
     display: block;
     margin: auto;
@@ -71,6 +75,19 @@ body {
 
 .sugerencias {
     grid-area: sugerencias;
+    display: grid;
+    overflow: scroll;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+}
+
+.sugerencias h2{
+    padding-top: 10px;
+}
+
+.sugerencias .img-with-text{
+    margin-top: 40px;
 }
 
 h1 {
@@ -144,10 +161,42 @@ button:hover {
     text-decoration: none;
 }
 
-.share-button img{
+.share-button img {
     margin-right: 5px;
 }
 
-.download-button img{
+.download-button img {
     margin-right: 5px;
+}
+
+.comments {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: scroll;
+    margin-left: 200px;
+}
+
+.coment {
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.coment input {
+    width: 70%;
+    height: 60px;
+}
+
+article {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.img-with-text {
+    text-align: justify;
+    width: 251px;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
 }
