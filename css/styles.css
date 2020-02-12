@@ -12,8 +12,7 @@ body {
     display: grid;
     grid-template-columns: 350px 1fr;
     grid-template-rows: 40vh 60vh;
-    grid-template-areas: 'left-bar top-video'
-                         'left-bar video-details';
+    grid-template-areas: 'left-bar top-video' 'left-bar video-details';
 }
 
 .left-bar {
@@ -36,40 +35,119 @@ body {
 .left-bar {
     background: #151B31;
     color: white;
-    line-height: 70px;
+    line-height: 50px;
     text-align: center;
 }
 
-.left-bar ul{
+.left-bar ul {
     list-style: none;
 }
 
-.logo-img{
+.logo-img {
     width: auto;
     vertical-align: middle;
 }
 
-.amigos img{
+.amigos img {
     display: block;
     margin: auto;
 }
 
-.video-info{
+.video-info {
     display: grid;
     grid-template-rows: 200px 1fr;
     grid-template-columns: 1fr 700px;
-    grid-template-areas: 'video-details video-details'
-                         'comments sugerencias';
+    grid-template-areas: 'video-details video-details' 'comments sugerencias';
 }
 
-.video-details{
+.video-details {
     grid-area: video-details;
+    border: 1px solid gray;
 }
 
-.comments{
+.comments {
     grid-area: comments;
 }
 
-.sugerencias{
+.sugerencias {
     grid-area: sugerencias;
+}
+
+h1 {
+    padding: 23px;
+}
+
+.views {
+    margin-top: -24px;
+    padding-left: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.save-buttons {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tag-buttons {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.tag-button {
+    border-radius: 10px;
+    color: white;
+    background: mediumpurple;
+    padding: 10px;
+}
+
+.tag-button:nth-of-type(2) {
+    background: darkslategrey;
+}
+
+.tag-button:nth-of-type(3) {
+    background: red;
+}
+
+.tag-button:nth-of-type(4) {
+    background: deeppink;
+}
+
+.add-button {
+    font-size: 23px;
+    color: white;
+    background: #fb6396;
+    border-radius: 5px;
+    padding: 10px;
+    width: 213px;
+    height: 64px;
+}
+
+.share-button {
+    color: black;
+    text-decoration: none;
+}
+
+.download-button {
+    color: black;
+    text-decoration: none;
+}
+
+.share-button img{
+    margin-right: 5px;
+}
+
+.download-button img{
+    margin-right: 5px;
 }
